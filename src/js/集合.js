@@ -362,3 +362,270 @@
 
 // let arr = _.range(0)
 // console.log(arr);
+
+// var func = function (greeting) {
+//   return greeting + ': ' + this.name;
+// };
+// func = _.bind(func, { name: 'moe' }, 'hi');
+// console.log(func())
+
+// var o = {
+//   para: 'hello',
+//   func: function() {
+//     console.log(this.para);
+//   }
+// }
+
+// o.func()
+// var test = o.func;
+// test()
+// var test = _.bind(o.func, o)
+// test()
+
+// _.bindAll(o, 'func')
+// let test = o.func
+// test()
+
+// var buttonView = {
+//   label: 'underscore',
+//   onClick: function() {alert('clicked: ' + this.label)},
+//   onHover: function() {console.log('hovering: ' + this.label);}
+// }
+
+// _.bindAll(buttonView, 'onClick', 'onHover')
+
+// var divObj = document.getElementById('div');
+// divObj.onclick = buttonView.onClick;
+
+// var subtract = function(a, b) {return b - a;}
+// sub5 = _.partial(subtract, 5);
+// let num = sub5(20)
+// console.log(num);
+
+// subFrom20 = _.partial(subtract, _, 20)
+// let num = subFrom20(2)
+// console.log(num);
+
+// var fibonacci = _.memoize(function(n) {
+//   return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2)
+// })
+// fibonacci(3)
+
+// var log = _.bind(console.log, console);
+// _.delay(log, 1000, 'logged later')
+
+// _.defer(function () {
+//   alert('deferred');
+// });
+
+// let keys = _.keys({ one: 1, two: 2, three: 3 });
+// console.log(keys);
+
+// function Stooge(name) {
+//   this.name = name;
+// }
+
+// Stooge.prototype.silly = true;
+
+// let keys = _.allKeys(new Stooge('moe'))
+// console.log(keys);
+
+// let arr = _.values({one: 1, two: 2, three: 3})
+// console.log(arr);
+
+// let obj = _.mapObject({ start: 5, end: 12 }, function (val, key) {
+//   return val + 5;
+// });
+// console.log(obj);
+
+// let arr = _.pairs({ one: 1, two: 2, three: 3 });
+// console.log(arr);
+
+// let obj = _.invert({ Moe: 'Moses', Larry: 'Louis', Curly: 'Jerome' });
+// console.log(obj);
+
+// function Stooge() {}
+
+// var moe = _.create(Stooge.prototype, { name: 'Moe' });
+// console.log(moe);
+
+// let arr = _.functions(_)
+// console.log(arr);
+
+// let result = _.findKey({one: 1, two: 2, three: 3}, function(val, key) {
+//   return val === 2
+// })
+// console.log(result);
+
+// let obj = {name: 'moe'}
+
+// let result = _.extend(obj, {age: 50})
+// console.log(obj);
+
+// let obj = _.pick({name: 'moe', age: 50, userid: 'moe1'}, 'name', 'age')
+// console.log(obj);
+
+// let obj = _.pick({ name: 'moe', age: 50, userid: 'moe1' }, function (
+//   val,
+//   key,
+//   object
+// ) {
+//   return _.isNumber(val);
+// });
+
+// console.log(obj);
+
+// let obj =  _.omit({name: 'moe', age: 50, userid: 'moe1'}, 'userid')
+// console.log(obj);
+
+// let obj = _.omit({ name: 'moe', age: 50, userid: 'moe1' }, function (
+//   val,
+//   key,
+//   object
+// ) {
+//   return _.isNumber(val);
+// });
+
+// console.log(obj);
+
+// var iceCream = { flavor: 'chocolate' };
+// let obj = _.defaults(iceCream, {flavor: 'vanilla', sprinkles: 'lots'})
+// console.log(obj);
+
+// let obj = { one: [1, 2, 3] };
+// let cloneObj = _.clone(obj);
+// obj.one[0] = 10
+// console.log(cloneObj);
+
+// let obj = _.chain([1, 2, 3, 200]).filter(function (num) {
+//   return num % 2 === 0;
+// }).tap(alert).map(function(num) { return num * num}).value()
+// console.log(obj);
+
+// let flag = _.has({ a: 1, b: 2, c: 3 }, 'b');
+// console.log(flag);
+
+// var stooge = {name: 'moe'}
+// let result = _.property('name')
+// console.log(result(stooge));
+
+// var stooges = {
+//   moe: { fears: { worst: 'Spiders' } },
+//   curly: { fears: { worst: 'Moe' } },
+// };
+
+// let curlysWorstFear = _.property(['curly', 'fears', 'worst']);
+// let result = curlysWorstFear(stooges);
+// console.log(result);
+// var arr = [1, [2, [3, 4]]];
+// let fn = _.property([1, 1, 0])
+// let result = fn(arr)
+// console.log(result);
+
+// var stooge = { name: 'moe' };
+// _.propertyOf(stooge)
+
+// var stooge = { name: 'moe' };
+// console.log(_.propertyOf(stooge)('name'))
+
+// var stooge = { name: 'moe', luckyNumbers: [13, 27, 34] };
+// var clone = { name: 'moe', luckyNumbers: [13, 27, 34] };
+// console.log(stooge === clone);
+// console.log(_.isEqual(stooge, clone))
+
+// var stooge = { name: 'moe', age: 32 };
+// let flag = _.isMatch(stooge, { age: 32 });
+// console.log(flag);
+
+// console.log(_.isEmpty([1, 2, 3]))
+// console.log(_.isEmpty({}))
+
+// let divObj = document.getElementById('div')
+// console.log(_.isElement(divObj))
+
+// console.log((function () {
+//   return _.isArray(arguments);
+// })())
+
+// console.log(_.isArray([1, 2, 3]));
+
+// console.log(_.isObject({}));
+// console.log(_.isObject([]));
+// console.log(_.isObject(1));
+
+// console.log((function () {
+//   return _.isArguments(arguments);
+// })(1, 2, 3))
+
+// console.log(_.isArguments([1, 2, 3]))
+
+// console.log(_.isFunction(alert));
+
+// console.log(_.isString('moe'))
+// console.log(_.isString(new String('moe')))
+
+// console.log(_.isNumber(8.4 * 5))
+
+// console.log(_.isFinite(-101));
+// console.log(_.isFinite(-Infinity));
+
+// console.log(_.isBoolean(null))
+
+// console.log(_.isDate(new Date()))
+// console.log(_.isRegExp(/moe/));
+
+// try {
+//   throw new TypeError('Example');
+// } catch (e) {
+//   console.log(_.isError(e))
+// }
+
+// console.log(_.isSymbol(Symbol()))
+// console.log(_.isMap(new Map()))
+// console.log(_.isWeakMap(new WeakMap()));
+// console.log(_.isSet(new Set()));
+
+// console.log(_.isWeakSet(new WeakSet()));
+// console.log(_.isNaN(NaN))
+// console.log(isNaN(undefined));
+// console.log(_.isNaN(undefined));
+
+// console.log(_.isNull(null))
+// console.log(_.isNull(undefined));
+// console.log(_.isUndefined(window.missingVarible));
+
+// let underscore = _.noConflict()
+// console.log(underscore.isUndefined(window.missing))
+
+// var stooge = {name: 'moe'}
+// let clone = _.identity(stooge)
+// console.log(stooge === clone);
+
+// var stooge = {name: 'moe'}
+// console.log(stooge === _.constant(stooge)())
+
+// let arr = _.times(3, function(n) {
+//   return n * 2
+// })
+// console.log(arr);
+
+// console.log(_.random(0, 100))
+
+// console.log(_.uniqueId('contact_'))
+// console.log(_.uniqueId('contact_'))
+// console.log(_.uniqueId('contact_'))
+
+// console.log(_.escape('Curly, Larry & Moe'))
+// console.log(_.unescape('Curly, Larry &amp; Moe'));
+// var obj = {
+//   cheese: 'crumpets',
+//   stuff: function () {
+//     return 'nonsense';
+//   },
+// };
+
+// console.log(_.result(obj, 'cheese'));
+// console.log(_.result(obj, 'stuff'));
+// console.log(_.result(obj, 'meat', 'ham'));
+
+// console.log(_.now());
