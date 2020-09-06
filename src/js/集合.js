@@ -252,3 +252,113 @@
 // var arr = _.compact([0, 1, false, 2, '', 3]);
 // console.log(arr);
 
+// let num = _.first([5, 4, 3, 2, 1], 3)
+// console.log(num);
+
+// let arr = _.initial([5, 4, 3, 2, 1], 3)
+// console.log(arr);
+
+// var num = _.last([5, 4, 3, 2, 1], 4)
+// console.log(num);
+
+// let arr = _.rest([5, 4, 3, 2, 1], 2)
+// console.log(arr);
+
+// let arr = _.flatten([1, [2], [3, [[4]]]])
+// console.log(arr);
+
+// let arr = _.flatten([1, [2], [3, [[4]]]], true)
+// console.log(arr);
+
+// let arr = _.without([1, 2, 1, 0, 3, 1, 4], 0, 1)
+// console.log(arr);
+
+// let arr = _.union([1, 2, 3], [101, 2, 1, 10], [2, 1]);
+// console.log(arr);
+
+//  let arr = _.union([1, 3, 2, 3, 2])
+//  console.log(arr);
+
+// let arr = _.intersection([1, 2, 3], [101, 2, 1, 10], [2, 1])
+// console.log(arr);
+
+// let result = _.difference([1, 2, 3, 4, 5], [5, 2, 10])
+// console.log(result);
+
+// let result = _.uniq([1, 2, 1, 4, 1, 3]);
+// console.log(result);
+
+// let arr = _.zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
+// console.log(arr);
+
+// let result = _.unzip([
+//   ['moe', 30, true],
+//   ['larry', 40, false],
+//   ['curly', 50, false],
+// ]);
+// console.log(result);
+
+// let obj = _.object(['moe', 'larry', 'curly'], [30, 40, 50]);
+// console.log(obj);
+// let obj = _.object([
+//   ['moe', 30],
+//   ['larry', 40],
+//   ['curly', 50],
+// ]);
+// console.log(obj);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// var partners = _.chunk(arr, 4);
+// console.log(partners);
+
+// let index = _.indexOf([1, 2, 3], 2)
+// console.log(index);
+
+// let index = _.indexOf([1, 2, 3, 4, 5, 6, 7, 8, 9], 3, 2)
+// console.log(index);
+
+// let index = _.lastIndexOf([1, 2, 3, 1, 2, 3], 2)
+// console.log(index);
+
+// let index = _.sortedIndex([10, 20, 30, 40, 50], 35)
+// console.log(index);
+
+// var stooges = [
+//   {name: 'moe', age: 40},
+//   {name: 'curly', age: 60}
+// ]
+
+// let index = _.sortedIndex(stooges, {name: 'larry', age: 50}, 'age')
+// console.log(index);
+
+// let index = _.findIndex([1, 6, 8, 12], function (num) {
+//   return num % 2 == 0;
+// })
+// console.log(index);
+
+// let index = _.findLastIndex(
+//   [
+//     { id: 1, name: 'Bob', last: 'Brown' },
+//     { id: 2, name: 'Ted', last: 'White' },
+//     { id: 3, name: 'Frank', last: 'James' },
+//     { id: 4, naem: 'Ted', last: 'Jones' },
+//   ],
+//   { name: 'Ted' }
+// );
+
+// console.log(index);
+
+// let arr = _.range(10)
+// console.log(arr);
+
+// let arr = _.range(1, 11)
+// console.log(arr);
+
+// let arr = _.range(0, 30, 5)
+// console.log(arr);
+
+// let arr = _.range(0, -10, -1)
+// console.log(arr);
+
+// let arr = _.range(0)
+// console.log(arr);
